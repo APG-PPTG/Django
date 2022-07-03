@@ -1,0 +1,19 @@
+table{
+  margin: auto;
+}
+tr{
+  height: 80px;
+}
+
+td{
+  width:100px;
+}
+
+.White{
+  background: white;
+  border: 1px solid white;
+}
+.Black{
+  background: Brown;
+  border: 1px solid black;
+}

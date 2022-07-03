@@ -1,0 +1,30 @@
+td{
+  width: 150px;
+  height: 500px;
+  text-align: center;
+  border: 3px solid white;
+  color: rgba(0, 0, 0, 1);
+  padding: 80px;
+}
+
+#One{
+  background: violet;
+}
+#Two{
+  background: indigo;
+}
+#Three{
+  background: blue;
+}
+#Four{
+  background: green;
+}
+#Five{
+  background: yellow;
+}
+#Six{
+  background: orange;
+}
+#Seven{
+  background: red;
+}
