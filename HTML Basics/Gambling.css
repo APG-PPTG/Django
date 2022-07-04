@@ -1,0 +1,26 @@
+body{
+background-color:#011627;
+color:#fdfffc;
+text-align:center;
+border:40px solid #2ec486;
+margin:0px;
+}
+
+p{
+padding-left: 20%;
+padding-right: 20%;
+padding-top:2%;
+}
+
+form{
+font-size:1.5em;
+margin:20px;
+}
+input[type='submit']{
+height:60px
+width:120px;
+margin:10px;
+font-size:1em;
+background:orange;
+border-radius:50px;
+}
