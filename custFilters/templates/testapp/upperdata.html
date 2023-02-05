@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% load cust_filters %}
+    {% if records %}
+    {% for record in records %}
+    <h1>{{record.name}} Information </h1>
+    <ul>
+      <li>Name: {{record.name | fnu:100 }}</li>
+      <li>Subject : {{record.subject | title }}</li>
+      <li>Department: {{record.dept | lower}}</li>
+      <li>Date: {{record.date | date:"d-m-Y"}}</li>
+    </ul><hr>
+    {% endfor %}
+    {% else %}
+    <h1>No Records Found </h1>
+    {% endif %}
+  </body>
+</html>

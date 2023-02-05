@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Input Form</title>
+    <link rel="stylesheet" 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nro
+nJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/input.css" %}">
+  </head>
+  <body>
+    <h1> Student Input Form </h1>
+	<div class = "container"  align='center' >
+    <form method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="" class="btn btn-lg btn-primary" value="Submit Marks">
+      {% if submitted %}
+      <h1>Student with the name : {{name}} Processed Success</h1>
+      <h1>Thanks for Providing Information </h1>
+      <h2>Enter Next Student Information </h2>
+      {% else %}
+      <h1> No Data </h1>
+      {% endif %}
+    </form>
+    </div>
+  </body>
+</html>

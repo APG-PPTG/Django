@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>King Sanju DB Home Page</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "css/student.css" %}">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Information</h1>
+      {% if student_list %}
+      {% for student in student_list %}
+      <h1>{{ student.name }}</h1>
+      <ul>
+        <li>Name: {{ student.stuName }}</li>
+        <li>RollNo: {{ student.rollNo }}</li>
+        <li>DOB: {{ student.dob }}</li>
+        <li>Marks: {{ student.marks }}</li>
+        <li>Email: {{ student.email }}</li>
+        <li>PhoneNo: {{ student.phno }}</li>
+        <li>Address: {{ student.address }}</li>
+      </ul>
+      <br>
+      {% endfor %}
+      {% endif %}
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+
+
+body{
+background:url("https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+input {
+    color: #212529;
+    background-color: #8cc;
+    border-color: #5bc2c2;
+}
+
+
+.jumbotron{
+  text-align: center !important;
+  margin-top: 100px;
+  color: green;
+}

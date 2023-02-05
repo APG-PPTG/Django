@@ -1,0 +1,37 @@
+
+
+body{
+background:url("https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container .jumbotron{
+margin-top: 100px;
+background:yellow;
+text-color:white;
+text-align: center;
+padding-bottom: 10px;
+}
+
+.Movies{
+  color: yellow;
+  margin: 20px 0px;
+}
+
+h1{
+  background-color: red;
+  margin:10px;
+  text-align:center;
+}
+
+ul{
+  background-color: blue;
+  margin: 10px;
+  font-size:25px;
+}
+
+img{
+  padding-left: 40px;
+
+}

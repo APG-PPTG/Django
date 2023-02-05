@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+  <div class="jumbotron">
+    <h1>Beer Details</h1>
+    <ul>
+      <h2><li>Beer Name: {{beer.name}}</li></h2>
+      <h2><li>Beer Taste: {{beer.taste}}</li></h2>
+      <h2><li>Beer Color: {{beer.color}}</li></h2>
+      <h2><li>Beer Price: {{beer.price}}</li></h2>
+    </ul>
+    <a href="/" class="btn btn-danger">Go to Beer Dash Board </a>
+  </div>
+{% endblock %}
